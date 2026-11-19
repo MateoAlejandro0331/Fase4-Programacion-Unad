@@ -1,0 +1,177 @@
+2026-11-18 20:29:29 | DEBUG    | software_fj            | configurar_logging:112 | Logging configurado. Archivo de registro: /Users/mateolopez/Documents/Universidad/Semestre II/Programación/Fase 4/logs/software_fj.log
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | __init__:109 | Sistema Software FJ iniciado.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:199 | ======================================================================
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:200 | INICIO DE LA SIMULACIÓN — SOFTWARE FJ
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:201 | ======================================================================
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 01: Registrar cliente válido (Ana Gómez)
+2026-11-18 20:29:29 | DEBUG    | software_fj.cliente    | __init__:63 | Cliente creado: Cliente CLI-0001: Ana Gómez | Doc: ******4050 | Email: a***@correo.com
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | registrar_cliente:138 | Cliente registrado: Cliente CLI-0001: Ana Gómez | Doc: ******4050 | Email: a***@correo.com
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 01 completada: Cliente CLI-0001: Ana Gómez | Doc: ******4050 | Email: a***@correo.com
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 02: Registrar cliente válido (Carlos Pérez)
+2026-11-18 20:29:29 | DEBUG    | software_fj.cliente    | __init__:63 | Cliente creado: Cliente CLI-0002: Carlos Pérez | Doc: ****3456 | Email: c***@empresa.co
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | registrar_cliente:138 | Cliente registrado: Cliente CLI-0002: Carlos Pérez | Doc: ****3456 | Email: c***@empresa.co
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 02 completada: Cliente CLI-0002: Carlos Pérez | Doc: ****3456 | Email: c***@empresa.co
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 03: Registrar cliente con correo inválido
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Registro de cliente falló: [FJ-101] Correo electrónico inválido: 'pedro-arroba-correo'.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 03 no completada: [FJ-101] Correo electrónico inválido: 'pedro-arroba-correo'.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 04: Registrar cliente con documento duplicado
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Registro de cliente falló: [FJ-500] Ya existe un cliente con documento terminado en 4050.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 04 no completada: [FJ-500] Ya existe un cliente con documento terminado en 4050.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 05: Registrar cliente sin documento (parámetro faltante)
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Registro de cliente falló: [FJ-102] El campo 'documento' es obligatorio.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 05 no completada: [FJ-102] El campo 'documento' es obligatorio.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 06: Registrar cliente con nombre inválido (números)
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Registro de cliente falló: [FJ-101] Nombre inválido 'R2D2': use solo letras y espacios (3-80 caracteres).
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 06 no completada: [FJ-101] Nombre inválido 'R2D2': use solo letras y espacios (3-80 caracteres).
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 07: Crear servicio de sala válido
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_servicio:176 | Servicio creado: Sala SRV-0001 'Sala Innovación': capacidad 20 personas, $80,000/h, disponible
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 07 completada: Sala SRV-0001 'Sala Innovación': capacidad 20 personas, $80,000/h, disponible
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 08: Crear servicio de alquiler de equipos válido
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_servicio:176 | Servicio creado: Equipo SRV-0002 'Portátiles Dell' (Portátil): 3/3 unidades libres, $15,000/h por unidad
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 08 completada: Equipo SRV-0002 'Portátiles Dell' (Portátil): 3/3 unidades libres, $15,000/h por unidad
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 09: Crear servicio de asesoría válido
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_servicio:176 | Servicio creado: Asesoría SRV-0003 'Auditoría de Seguridad' en Ciberseguridad (nivel experto), $120,000/h base
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 09 completada: Asesoría SRV-0003 'Auditoría de Seguridad' en Ciberseguridad (nivel experto), $120,000/h base
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 10: Crear servicio con tarifa negativa
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Creación de servicio falló: [FJ-201] La tarifa base debe ser positiva (se recibió -5000.0).
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 10 no completada: [FJ-201] La tarifa base debe ser positiva (se recibió -5000.0).
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 11: Crear servicio de tipo inexistente
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Creación de servicio falló: [FJ-200] Tipo de servicio 'transporte' no existe; use ['sala', 'equipo', 'asesoria'].
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 11 no completada: [FJ-200] Tipo de servicio 'transporte' no existe; use ['sala', 'equipo', 'asesoria'].
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 12: Crear asesoría con nivel inválido
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Creación de servicio falló: [FJ-201] Nivel 'maestro' inválido; use uno de ['junior', 'senior', 'experto'].
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 12 no completada: [FJ-201] Nivel 'maestro' inválido; use uno de ['junior', 'senior', 'experto'].
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 13: Crear equipo sin parámetros obligatorios
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:71 | Creación de servicio falló: [FJ-200] Datos incompletos para crear 'equipo': AlquilerEquipo.__init__() missing 2 required positional arguments: 'tipo_equipo' and 'unidades' | causa: TypeError: AlquilerEquipo.__init__() missing 2 required positional arguments: 'tipo_equipo' and 'unidades'
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 13 no completada: [FJ-200] Datos incompletos para crear 'equipo': AlquilerEquipo.__init__() missing 2 required positional arguments: 'tipo_equipo' and 'unidades'
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 14: Reserva de sala exitosa: crear, confirmar con 10% desc. y procesar
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0001 → PENDIENTE (Reserva creada)
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_reserva:224 | Reserva creada: Reserva RES-0001: Ana Gómez → Sala Innovación (3 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | calcular_costo:200 | Costo SRV-0001: base=264000.00 desc=10% imp=19% total=282744.00
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0001 → CONFIRMADA (Costo total $282,744.00)
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0001 → PROCESADA (Pago registrado)
+2026-11-18 20:29:29 | DEBUG    | software_fj.reserva    | procesar:238 | Intento de procesamiento de RES-0001 finalizado (estado: procesada).
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | procesar_reserva:255 | Comprobante emitido: {'reserva': 'RES-0001', 'cliente': 'Ana Gómez', 'documento': '******4050', 'servicio': 'Sala Innovación', 'duracion_horas': 3.0, 'total': 282744.0, 'fecha': '2026-11-18T20:29:29'}
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 14 completada: {'reserva': 'RES-0001', 'cliente': 'Ana Gómez', 'documento': '******4050', 'servicio': 'Sala Innovación', 'duracion_horas': 3.0, 'total': 282744.0, 'fecha': '2026-11-18T20:29:29'}
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 15: Reserva de sala con más asistentes que la capacidad
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:71 | Creación de reserva falló: [FJ-301] Datos de reserva inválidos para 'Sala Innovación': 35 asistentes no caben en 'Sala Innovación' (capacidad 20). | causa: ParametroServicioError: [FJ-201] 35 asistentes no caben en 'Sala Innovación' (capacidad 20).
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 15 no completada: [FJ-301] Datos de reserva inválidos para 'Sala Innovación': 35 asistentes no caben en 'Sala Innovación' (capacidad 20).
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 16: Reserva con duración no numérica ('tres')
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:71 | Creación de reserva falló: [FJ-301] Datos de reserva inválidos para 'Sala Innovación': 'duracion' debe ser numérico, se recibió 'tres'. | causa: ParametroServicioError: [FJ-201] 'duracion' debe ser numérico, se recibió 'tres'. ← ValueError: could not convert string to float: 'tres'
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 16 no completada: [FJ-301] Datos de reserva inválidos para 'Sala Innovación': 'duracion' debe ser numérico, se recibió 'tres'.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 17: Reserva de cliente inexistente
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Creación de reserva falló: [FJ-501] No existe un cliente con documento terminado en 5678.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 17 no completada: [FJ-501] No existe un cliente con documento terminado en 5678.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 18: Reservar 2 portátiles para Ana (confirmada)
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0002 → PENDIENTE (Reserva creada)
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_reserva:224 | Reserva creada: Reserva RES-0002: Ana Gómez → Portátiles Dell (8 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | calcular_costo:200 | Costo SRV-0002: base=252000.00 desc=0% imp=19% total=299880.00
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | reservar_recursos:339 | SRV-0002: 2 unidades apartadas, quedan 1.
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0002 → CONFIRMADA (Costo total $299,880.00)
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 18 completada: Reserva RES-0002: Ana Gómez → Portátiles Dell (8 h) | estado: confirmada | costo: $299,880.00
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 19: Reservar 2 portátiles para Carlos (sin inventario suficiente)
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0003 → PENDIENTE (Reserva creada)
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_reserva:224 | Reserva creada: Reserva RES-0003: Carlos Pérez → Portátiles Dell (4 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | calcular_costo:200 | Costo SRV-0002: base=126000.00 desc=0% imp=19% total=149940.00
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Confirmación de reserva falló: [FJ-202] Solo quedan 1 unidades de 'Portátiles Dell' y se solicitaron 2.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 19 no completada: [FJ-202] Solo quedan 1 unidades de 'Portátiles Dell' y se solicitaron 2.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 20: Cancelar reserva de Ana y confirmar la de Carlos
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | liberar_recursos:346 | SRV-0002: 2 unidades liberadas, quedan 3.
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0002 → CANCELADA (Cambio de fecha del evento)
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | calcular_costo:200 | Costo SRV-0002: base=126000.00 desc=0% imp=19% total=149940.00
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | reservar_recursos:339 | SRV-0002: 2 unidades apartadas, quedan 1.
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0003 → CONFIRMADA (Costo total $149,940.00)
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 20 completada: Reserva RES-0003: Carlos Pérez → Portátiles Dell (4 h) | estado: confirmada | costo: $149,940.00
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 21: Procesar una reserva ya cancelada (operación no permitida)
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Procesamiento de reserva falló: [FJ-302] No se puede procesar la reserva RES-0002 en estado 'cancelada'.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 21 no completada: [FJ-302] No se puede procesar la reserva RES-0002 en estado 'cancelada'.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 22: Asesoría presencial exitosa (búsqueda sobrecargada por número)
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0004 → PENDIENTE (Reserva creada)
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_reserva:224 | Reserva creada: Reserva RES-0004: Carlos Pérez → Auditoría de Seguridad (2 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | DEBUG    | software_fj.servicios  | calcular_costo:200 | Costo SRV-0003: base=530000.00 desc=5% imp=19% total=599165.00
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0004 → CONFIRMADA (Costo total $599,165.00)
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0004 → PROCESADA (Pago registrado)
+2026-11-18 20:29:29 | DEBUG    | software_fj.reserva    | procesar:238 | Intento de procesamiento de RES-0004 finalizado (estado: procesada).
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | procesar_reserva:255 | Comprobante emitido: {'reserva': 'RES-0004', 'cliente': 'Carlos Pérez', 'documento': '****3456', 'servicio': 'Auditoría de Seguridad', 'duracion_horas': 2.0, 'total': 599165.0, 'fecha': '2026-11-18T20:29:29'}
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:74 | Operación 22 completada: {'reserva': 'RES-0004', 'cliente': 'Carlos Pérez', 'documento': '****3456', 'servicio': 'Auditoría de Seguridad', 'duracion_horas': 2.0, 'total': 599165.0, 'fecha': '2026-11-18T20:29:29'}
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 23: Confirmar asesoría con descuento del 150% (cálculo inconsistente)
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0005 → PENDIENTE (Reserva creada)
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_reserva:224 | Reserva creada: Reserva RES-0005: Ana Gómez → Auditoría de Seguridad (2 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:71 | Confirmación de reserva falló: [FJ-301] No se pudo confirmar RES-0005: cálculo de costo inconsistente. | causa: CalculoInconsistenteError: [FJ-400] El descuento debe estar entre 0 y 1 (se recibió 1.5).
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 23 no completada: [FJ-301] No se pudo confirmar RES-0005: cálculo de costo inconsistente.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 24: Reservar sala deshabilitada por mantenimiento
+2026-11-18 20:29:29 | INFO     | software_fj.servicios  | deshabilitar:94 | Servicio SRV-0001 deshabilitado.
+2026-11-18 20:29:29 | INFO     | software_fj.reserva    | _registrar_cambio:152 | RES-0006 → PENDIENTE (Reserva creada)
+2026-11-18 20:29:29 | INFO     | software_fj.sistema    | crear_reserva:224 | Reserva creada: Reserva RES-0006: Carlos Pérez → Sala Innovación (2 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | ERROR    | software_fj.sistema    | envoltura:73 | Confirmación de reserva falló: [FJ-202] El servicio 'Sala Innovación' no está disponible actualmente.
+2026-11-18 20:29:29 | WARNING  | software_fj.simulacion | ejecutar_operacion:64 | Operación 24 no completada: [FJ-202] El servicio 'Sala Innovación' no está disponible actualmente.
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:55 | ──────────────────────────────────────────────────────────────────────
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_operacion:56 | Operación 25: Carga de lote de clientes con datos corruptos (error inesperado)
+2026-11-18 20:29:29 | CRITICAL | software_fj.simulacion | ejecutar_operacion:69 | Operación 25 produjo un error inesperado; el sistema continúa.
+Traceback (most recent call last):
+  File "/Users/mateolopez/Documents/Universidad/Semestre II/Programación/Fase 4/software_fj/simulacion.py", line 59, in ejecutar_operacion
+    valor = operacion()
+  File "/Users/mateolopez/Documents/Universidad/Semestre II/Programación/Fase 4/software_fj/simulacion.py", line 125, in carga_lote_corrupto
+    return [sistema.registrar_cliente(d["nombre"], d["documento"], d["email"]) for d in lote]
+                                                                   ~^^^^^^^^^
+KeyError: 'email'
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:206 | ======================================================================
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:207 | RESUMEN DE LA SIMULACIÓN
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   01. Registrar cliente válido (Ana Gómez)                                   OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   02. Registrar cliente válido (Carlos Pérez)                                OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   03. Registrar cliente con correo inválido                                  FALLÓ (controlado) → ClienteInvalidoError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   04. Registrar cliente con documento duplicado                              FALLÓ (controlado) → EntidadDuplicadaError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   05. Registrar cliente sin documento (parámetro faltante)                   FALLÓ (controlado) → ParametroFaltanteError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   06. Registrar cliente con nombre inválido (números)                        FALLÓ (controlado) → ClienteInvalidoError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   07. Crear servicio de sala válido                                          OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   08. Crear servicio de alquiler de equipos válido                           OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   09. Crear servicio de asesoría válido                                      OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   10. Crear servicio con tarifa negativa                                     FALLÓ (controlado) → ParametroServicioError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   11. Crear servicio de tipo inexistente                                     FALLÓ (controlado) → ServicioError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   12. Crear asesoría con nivel inválido                                      FALLÓ (controlado) → ParametroServicioError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   13. Crear equipo sin parámetros obligatorios                               FALLÓ (controlado) → ServicioError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   14. Reserva de sala exitosa: crear, confirmar con 10% desc. y procesar     OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   15. Reserva de sala con más asistentes que la capacidad                    FALLÓ (controlado) → ReservaInvalidaError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   16. Reserva con duración no numérica ('tres')                              FALLÓ (controlado) → ReservaInvalidaError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   17. Reserva de cliente inexistente                                         FALLÓ (controlado) → EntidadNoEncontradaError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   18. Reservar 2 portátiles para Ana (confirmada)                            OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   19. Reservar 2 portátiles para Carlos (sin inventario suficiente)          FALLÓ (controlado) → ServicioNoDisponibleError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   20. Cancelar reserva de Ana y confirmar la de Carlos                       OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   21. Procesar una reserva ya cancelada (operación no permitida)             FALLÓ (controlado) → OperacionNoPermitidaError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   22. Asesoría presencial exitosa (búsqueda sobrecargada por número)         OK
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   23. Confirmar asesoría con descuento del 150% (cálculo inconsistente)      FALLÓ (controlado) → ReservaInvalidaError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   24. Reservar sala deshabilitada por mantenimiento                          FALLÓ (controlado) → ServicioNoDisponibleError
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:209 |   25. Carga de lote de clientes con datos corruptos (error inesperado)       FALLÓ (inesperado)
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:210 | Total: 25 operaciones | 9 exitosas | 15 errores controlados | 1 inesperados
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:214 | Estado final del sistema: {'clientes': 2, 'servicios': 3, 'reservas': 6, 'reservas_por_estado': {'pendiente': 2, 'confirmada': 1, 'cancelada': 1, 'procesada': 2}, 'ingresos_procesados': 881909.0}
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:216 |   Reserva RES-0001: Ana Gómez → Sala Innovación (3 h) | estado: procesada | costo: $282,744.00
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:216 |   Reserva RES-0002: Ana Gómez → Portátiles Dell (8 h) | estado: cancelada | costo: $299,880.00
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:216 |   Reserva RES-0003: Carlos Pérez → Portátiles Dell (4 h) | estado: confirmada | costo: $149,940.00
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:216 |   Reserva RES-0004: Carlos Pérez → Auditoría de Seguridad (2 h) | estado: procesada | costo: $599,165.00
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:216 |   Reserva RES-0005: Ana Gómez → Auditoría de Seguridad (2 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:216 |   Reserva RES-0006: Carlos Pérez → Sala Innovación (2 h) | estado: pendiente | costo: sin calcular
+2026-11-18 20:29:29 | INFO     | software_fj.simulacion | ejecutar_simulacion:217 | Simulación finalizada sin interrupciones.
