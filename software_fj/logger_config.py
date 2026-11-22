@@ -89,11 +89,11 @@ def configurar_logging(
                 "encoding": "utf-8",
             },
             "consola": {
-                "class": "logging.StreamHandler",
-                "level": logging.getLevelName(nivel_consola),
-                "formatter": "compacto",
-                "stream": "ext://sys.stdout",
-            },
+                    "class": "logging.StreamHandler",
+                    "level": logging.getLevelName(nivel_consola),
+                    "formatter": "compacto",
+                    "stream": "ext://sys.stdout",
+                },
         },
         "loggers": {
             NOMBRE_LOGGER_RAIZ: {
@@ -104,6 +104,14 @@ def configurar_logging(
             }
         },
     }
+
+    # Reconfigura la salida estándar a UTF-8 para evitar UnicodeEncodeError
+    # en consolas Windows (cp1252) al emitir caracteres como →, ─, etc.
+    import sys
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
     logging.config.dictConfig(configuracion)
     _configurado = True
